@@ -1,147 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/019fb57451.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/responsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/019fb57451.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
     <title>Survey Form</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <h1 id="title" class="text-center">Sarfaraz's Survey Form</h1>
-            <p id="description" class="description text-center">
-                Thank you for taking time to help me improve my skills
-            </p>
-        </header>
-        <form id="survey-form">
-            <div class="form-group">
-                <label id="name-label" for="name">Full Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name"
-                    required />
-            </div>
-            <div class="form-group">
-                <label id="email-label" for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email ID"
-                    required />
-            </div>
-            <div class="form-group">
-                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-                <input type="number" name="age" id="number" min="5" max="75" class="form-control"
-                    placeholder="Enter your age" />
-            </div>
-            <div class="form-group">
-                <p>Which option best describes your current role?</p>
-                <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected value>Select current role</option>
-                    <option value="student">Student</option>
-                    <option value="intern">Intern</option>
-                    <option value="part-time-job">Part Time Job</option>
-                    <option value="full-time-job">Full Time Job</option>
-                    <option value="learner">Full Time Learner</option>
-                    <option value="other">Other</option>
-                    <option value="preferNo">Prefer not to say</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>Would you recommend my profile to your friend or colleague?</p>
-                <label>
-                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
-                    Definitely
-                </label>
-                <label>
-                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />
-                    Maybe
-                </label>
-                <label>
-                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />
-                    Not sure
-                </label>
-            </div>
-            <div class="form-group">
-                <p>
-                    What is your favorite feature of me?
-                </p>
-                <select id="most-like" name="mostLike" class="form-control" required>
-                    <option disabled selected value>Select an option</option>
-                    <option value="sensehumour">Sense of humour</option>
-                    <option value="boldness">Boldness</option>
-                    <option value="sincerity">Sincerity</option>
-                    <option value="hairs">Hairs lol</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>
-                    What would you suggest me to learn?
-                    <span class="clue">(Check all that apply)</span>
-                </p>
-                <label>
-                    <input name="prefer" value="java" type="checkbox" class="input-checkbox" />
-                    Java
-                </label>
-                <label>
-                    <input name="prefer" value="web-development" type="checkbox" class="input-checkbox" />
-                    Web Development
-                </label>
-                <label>
-                    <input name="prefer" value="dsa" type="checkbox" class="input-checkbox" />
-                    Data Structure and Algorithms</label>
-                <label>
-                    <input name="prefer" value="c-c++" type="checkbox" class="input-checkbox" />
-                    C & C++
-                </label>
-                <label>
-                    <input name="prefer" value="PHP" type="checkbox" class="input-checkbox" />
-                    PHP
-                </label>
-                <label>
-                    <input name="prefer" value="Android-Development" type="checkbox" class="input-checkbox" />
-                    Android Development
-                </label>
-                <label>
-                    <input name="prefer" value="python" type="checkbox" class="input-checkbox" />
-                    Python</label>
-                <label>
-                    <input name="prefer" value="ML" type="checkbox" class="input-checkbox" />
-                    Machine Learning
-                </label>
-                <label>
-                    <input name="prefer" value="datascience" type="checkbox" class="input-checkbox" />
-                    Data Science
-                </label>
-            </div>
-            <div class="form-group">
-                <p>Any comments or suggestions?</p>
-                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
-            </textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" id="submit" class="submit-button">
-                    Submit
-                </button>
-            </div>
-        </form>
+      <header class="header">
+        <h1 id="title" class="text-center">Sarfaraz's Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking time to help me improve my skills
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email ID"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="5"
+            max="75"
+            class="form-control"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="part-time-job">Part Time Job</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="other">Other</option>
+            <option value="preferNo">Prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend my profile to your friend or colleague?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Definitely
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />
+            Maybe
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />
+            Not sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite feature of me?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="sensehumour">Sense of humour</option>
+            <option value="boldness">Boldness</option>
+            <option value="sincerity">Sincerity</option>
+            <option value="hairs">Hairs lol</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What would you suggest me to learn?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input
+              name="prefer"
+              value="java"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Java
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="web-development"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Web Development
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="dsa"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Data Structure and Algorithms</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="c-c++"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            C & C++
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="PHP"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            PHP
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="Android-Development"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Android Development
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="python"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Python</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="ML"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Machine Learning
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="datascience"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Data Science
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          >
+          </textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
     <footer id="footer" class="footer text-center">
-        <div class="contact">
-            <div class="row">
-                <a href="https://www.linkedin.com/in/sarfaraz-khan-mech" class="btn btn-default btn-social btn-linkedin"
-                    target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
-                <a href="https://github.com/GoogolDKhan" class="btn btn-default btn-social btn-github"
-                    target="_blank"><span class="fa fa-github"></span> GitHub</a>
-                <a href="https://www.freecodecamp.org/sarfarazkhan" class="btn btn-default btn-social btn-freeCodeCamp"
-                    target="_blank"><i class="fa fa-free-code-camp"></i> FreeCodeCamp </a>
-                <a href="https://codepen.io/googoldkhan" class="btn btn-default btn-social btn-codepen"
-                    target="_blank"><i class="fa fa-codepen"></i>Codepen</a>
-            </div>
-            <p>&copy 2021 Made with &#10084; by Sarfaraz Khan</p>
+      <div class="contact">
+        <div class="row">
+          <a
+            href="https://www.linkedin.com/in/sarfaraz-khan-mech"
+            class="btn btn-default btn-social btn-linkedin"
+            target="_blank"
+            ><span class="fa fa-linkedin"></span> LinkedIn</a
+          >
+          <a
+            href="https://github.com/GoogolDKhan"
+            class="btn btn-default btn-social btn-github"
+            target="_blank"
+            ><span class="fa fa-github"></span> GitHub</a
+          >
+          <a
+            href="https://www.freecodecamp.org/sarfarazkhan"
+            class="btn btn-default btn-social btn-freeCodeCamp"
+            target="_blank"
+            ><i class="fa fa-free-code-camp"></i> FreeCodeCamp
+          </a>
+          <a
+            href="https://codepen.io/googoldkhan"
+            class="btn btn-default btn-social btn-codepen"
+            target="_blank"
+            ><i class="fa fa-codepen"></i>Codepen</a
+          >
+        </div>
+      </div>
+      <p>&copy 2021 Made with &#10084; by Sarfaraz Khan</p>
     </footer>
-    </div>
-</body>
-
+  </body>
 </html>
