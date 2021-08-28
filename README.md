@@ -10,6 +10,6 @@
   
 ## Author
 
-- [@Sarfaraz](https://www.github.com/GoogolDKhan)
+- This project is inspired by [FCC: Survey Form](https://codepen.io/freeCodeCamp/full/VPaoNP)
 
 - Dated : 25-05-2021
